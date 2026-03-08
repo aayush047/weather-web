@@ -1,0 +1,176 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+
+overflow:hidden;
+
+}
+
+/* MAIN */
+
+.app{
+
+text-align:center;
+color:white;
+
+}
+
+/* TITLE */
+
+.title{
+
+font-size:50px;
+margin-bottom:30px;
+
+}
+
+/* SEARCH */
+
+.search{
+
+margin-bottom:30px;
+
+}
+
+.search input{
+
+padding:14px;
+border-radius:30px;
+border:none;
+width:220px;
+margin-right:10px;
+
+}
+
+.search button{
+
+padding:14px 25px;
+border:none;
+border-radius:30px;
+background:#222;
+color:white;
+cursor:pointer;
+
+}
+
+/* CARD */
+
+.card{
+
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+
+padding:30px;
+border-radius:20px;
+
+width:300px;
+margin:auto;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+animation:fade 1s ease;
+
+}
+
+.icon{
+
+width:120px;
+animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+
+}
+
+.cloud{
+
+position:absolute;
+width:200px;
+opacity:0.7;
+
+}
+
+/* CLOUD 1 */
+
+.cloud1{
+
+top:80px;
+left:-200px;
+animation:move 40s linear infinite;
+
+}
+
+/* CLOUD 2 */
+
+.cloud2{
+
+top:200px;
+left:-150px;
+width:160px;
+animation:move 55s linear infinite;
+
+}
+
+/* CLOUD 3 */
+
+.cloud3{
+
+top:350px;
+left:-250px;
+width:240px;
+animation:move 70s linear infinite;
+
+}
+
+@keyframes move{
+
+0%{
+transform:translateX(0)
+}
+
+100%{
+transform:translateX(160vw)
+}
+
+}
+
+.extra{
+
+margin-top:15px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+font-size:14px;
+
+}
+
+.desc{
+text-transform:capitalize;
+margin-bottom:10px;
+}
+
+.error{
+color:yellow;
+margin-top:10px;
+font-weight:bold;
+}
+
+.loading{
+margin-top:10px;
+}
