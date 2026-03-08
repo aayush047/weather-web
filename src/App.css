@@ -174,3 +174,35 @@ font-weight:bold;
 .loading{
 margin-top:10px;
 }
+
+@media (max-width:600px){
+
+.title{
+font-size:32px;
+}
+
+.search{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.search input{
+width:100%;
+margin-right:0;
+}
+
+.search button{
+width:100%;
+}
+
+.card{
+width:90%;
+padding:20px;
+}
+
+.icon{
+width:90px;
+}
+
+}
